@@ -30,6 +30,6 @@ spec:
    - name: client
      protocol: TCP
      port: 80
-     nodePort: 32080
+     nodePort: 80
  selector:
    app: sunofundosapi
