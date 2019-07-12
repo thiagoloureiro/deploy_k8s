@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sunofundosapi
+  name: sunofundosapideploy
 spec:
   selector:
     matchLabels:
-      app: sunofundosapi
+      app: sunofundosapideploy
   replicas: 1 
   template: 
     metadata:
       labels:
-        app: sunofundosapi
+        app: sunofundosapideploy
     spec:
       containers:
-      - name: sunofundosapi
+      - name: sunofundosapideploy
         image: thiagoguaru/sunofundosapi:latest
         ports:
         - containerPort: 80
